@@ -1,0 +1,5 @@
+/.vscode
+/.xmake
+/Module.symvers
+/hello.mod
+/modules.order
