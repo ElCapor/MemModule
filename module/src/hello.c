@@ -28,7 +28,6 @@ int hello_init(void)
 {
     pr_info("Hello World: %d\n", add(1, 2));
     read_proc();
-    panic("Bye bye cruel world");
     return 0;
 }
 
