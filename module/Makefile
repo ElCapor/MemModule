@@ -4,9 +4,12 @@ ifneq ($(KERNELRELEASE),)
 else
     KERN_DIR ?= /usr/lib/modules/6.6.10-1-MANJARO/build/
     PWD := $(shell pwd)
+	BIN_DIR := $(PWD)/bin
 
 default:
 	$(MAKE) -C $(KERN_DIR) V=1 M=$(PWD) modules
+	@mkdir -p $(BIN_DIR)
+	@mv *.ko $(BIN_DIR)/
 endif
 
 clean:

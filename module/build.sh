@@ -1,6 +1,5 @@
 #!/bin/bash
-rmmod hello
+# um will load & remove manually
 make
 make clean_objs
-modinfo hello.ko
-insmod hello.ko
+modinfo ../bin/hello.ko
