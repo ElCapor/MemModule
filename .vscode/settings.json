@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "module.h": "c",
+        "kernel.h": "c",
+        "sched.h": "c",
+        "netlink.h": "c",
+        "types.h": "c",
+        "scm.h": "c",
+        "pid.h": "c",
+        "compat.h": "c",
+        "siginfo.h": "c"
+    }
+}
