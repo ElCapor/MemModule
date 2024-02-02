@@ -3,11 +3,12 @@
         {
             "name": "Linux",
             "includePath": [
-                "/usr/lib/modules/6.6.10-1-MANJARO/build/include/"
+                "/usr/lib/modules/6.6.10-1-MANJARO/build/include/",
+                "/usr/lib/modules/6.6.10-1-MANJARO/build/include/linux/"
             ],
             "intelliSenseMode": "linux-gcc-x64",
             "compilerPath": "/usr/bin/clang",
-            "cStandard": "c17",
+            "cStandard": "c89",
             "cppStandard": "c++17"
         }
     ],

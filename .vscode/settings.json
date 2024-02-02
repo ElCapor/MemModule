@@ -8,6 +8,7 @@
         "scm.h": "c",
         "pid.h": "c",
         "compat.h": "c",
-        "siginfo.h": "c"
+        "siginfo.h": "c",
+        "skbuff.h": "c"
     }
 }
