@@ -84,9 +84,9 @@ int main(int args, char *argv[])
     printf("Waiting for message from kernel\n");
 
     /* Read message from kernel */
-    recvmsg(sock_fd, &resp, 0);  //msg is also receiver for read
+    //recvmsg(sock_fd, &resp, 0);  //msg is also receiver for read
 
-    printf("Received message payload: %s\n", (char *) NLMSG_DATA(nlh2));  
+    //printf("Received message payload: %s\n", (char *) NLMSG_DATA(nlh2));  
 
     char usermsg[MAX_PAYLOAD];
     while (1) {
@@ -104,9 +104,9 @@ int main(int args, char *argv[])
         printf("Waiting for message from kernel\n");
 
         /* Read message from kernel */
-    recvmsg(sock_fd, &resp, 0);  //msg is also receiver for read
+    //recvmsg(sock_fd, &resp, 0);  //msg is also receiver for read
 
-    printf("Received message payload: %s\n", (char *)NLMSG_DATA(nlh2));   
+    //printf("Received message payload: %s\n", (char *)NLMSG_DATA(nlh2));   
 
 }
     close(sock_fd);

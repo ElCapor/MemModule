@@ -39,12 +39,16 @@ struct sock *nl_sk = NULL;
 
 void netlink_rcv(struct sk_buff *skb)
 {
-    pr_info("Hello guys %s \n", __FUNCTION__);
+    pr_info("Zoe ❤️ %s \n", __FUNCTION__);
 
     // get header of receieved message
     struct nlmsghdr* nlhead;
     nlhead = nlmsg_hdr(skb);
 
+    if (strcmp((char*)nlmsg_data(nlhead), "lap") == 0)
+    {
+        read_proc();
+    }
     pr_info("Receieved Message %s from %d \n", (char*)nlmsg_data(nlhead),nlhead->nlmsg_pid);
     
 }
