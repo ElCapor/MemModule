@@ -1,6 +1,6 @@
 ifneq ($(KERNELRELEASE),)
     obj-m := hello.o
-	hello-objs := ./src/hello.o ./src/netlink_server.o ./src/proc_server.o
+	hello-objs := ./src/hello.o ./src/netlink_server.o ./src/proc_server.o ./src/kjson_main.o ./src/kjson_parser.o
 else
     KERN_DIR ?= /usr/lib/modules/6.6.10-1-MANJARO/build/
     PWD := $(shell pwd)
